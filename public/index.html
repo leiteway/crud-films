@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/movies.css">
+  <title>CRUD METHOD</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Formulario de Películas</h1>
+
+    <!-- Formulario para agregar una nueva película -->
+    <form id="formAgregar">
+      <label for="titulo">Título:</label>
+      <input placeholder="film title.." type="text" id="titulo" required>
+      
+      <label for="director">Director:</label>
+      <input placeholder="film director.." type="text" id="director" required>
+
+      <button type="submit">Agregar Película</button>
+    </form>
+
+    <!-- Listado de películas -->
+    <h2>Listado de Películas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Director</th>
+        </tr>
+      </thead>
+      <tbody id="listaPeliculas"></tbody>
+    </table>
+
+    <!-- Formulario para buscar y eliminar películas -->
+    <form id="formEliminar">
+      <label for="idEliminar">ID de película a eliminar:</label>
+      <input placeholder="id number.." type="text" id="idEliminar" required>
+      <button type="submit">Eliminar Película</button>
+    </form>
+
+    <!-- Formulario para actualizar una película -->
+    <button id="btnMostrarFormulario">Actualizar Película</button>
+
+    <form id="formActualizar">
+      <label for="idActualizar">ID de película a actualizar:</label>
+      <input placeholder="id number.." type="text" id="idActualizar" required>
+      
+      <label for="nuevoTitulo">Nuevo Título:</label>
+      <input placeholder="new film.." type="text" id="nuevoTitulo" required>
+      
+      <label for="nuevoDirector">Nuevo Director:</label>
+      <input placeholder="new director.." type="text" id="nuevoDirector" required>
+
+      <button type="submit">Actualizar Película</button>
+      <button type="button" onclick="cerrarFormulario()">Cancelar</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../src/script.js"></script>
+</body>
+</html>
+

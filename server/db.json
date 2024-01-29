@@ -1,0 +1,29 @@
+{
+  "peliculas": [
+    {
+      "titulo": "Harry Potter: Y El Prisionero de Azkaban",
+      "director": "Alfonso Cuaron",
+      "id": "c2d7"
+    },
+    {
+      "id": "5078",
+      "titulo": "Dentro del Laberinto",
+      "director": "Jim Henson"
+    },
+    {
+      "id": "755f",
+      "titulo": "Mean Girls",
+      "director": "Mark Waters"
+    },
+    {
+      "id": "0754",
+      "titulo": "La Princesa Mononoke",
+      "director": "Hayao Miyazaki"
+    },
+    {
+      "id": "2b45",
+      "titulo": "Interstellar",
+      "director": "Christopher Nolan"
+    }
+  ]
+}
